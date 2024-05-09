@@ -23,21 +23,6 @@
             line-height: 2;
         }
 
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
         .price {
             margin-left: 1em;
             font-size: .5em;
@@ -100,14 +85,21 @@
                     <form action="" method="post" novalidate class="row g-1">
                         <span class="col-4 text-left border-bottom border-gray-200"><i class="fa fa-list"></i>
                             カテゴリ</span>
-                        <label class="col-8"><input type="text" class="form-control" placeholder="カテゴリ"></label>
+                        <label class="col-8">
+                            <select name="" class="form-select">
+                                <option selected>カテゴリ</option>
+                                @foreach ($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                @endforeach
+                            </select>
+                        </label>
                         <span class="col-4 text-left border-bottom border-gray-200"><i class="fa fa-money"></i>
                             価格範囲</span>
-                        <label class="col-4"><input type="text" class="form-control" placeholder="最安値(円)"></label>
-                        <label class="col-4"><input type="text" class="form-control" placeholder="最高値(円)"></label>
+                        <label class="col-4"><input type="text" name="" class="form-control" placeholder="最安値(円)"></label>
+                        <label class="col-4"><input type="text" name="" class="form-control" placeholder="最高値(円)"></label>
                         <span class="col-4 text-left border-bottom border-gray-200"><i class="fa fa-tags"></i>
                             キーワード</span>
-                        <label class="col-8"><input type="text" class="form-control" placeholder="キーワード"></label>
+                        <label class="col-8"><input type="text" name="" class="form-control" placeholder="キーワード"></label>
                         <a class="col-8 ml-auto btn btn-secondary" href="#">絞り込み検索</a>
                     </form>
                 </div>
@@ -148,7 +140,9 @@
         <div class="container">
             <p class="float-right mb-1"><a href="#" class="text-white-50">Back to top</a></p>
             <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p class="mb-0">New to Bootstrap? <a href="/" class="text-white-50">Visit the homepage</a> or read our <a href="/docs/5.0/getting-started/introduction/" class="text-white-50">getting started guide</a>.
+            <p class="mb-0">New to Bootstrap? <a href="/" class="text-white-50">Visit the homepage</a> or
+                read our <a href="/docs/5.0/getting-started/introduction/" class="text-white-50">getting started
+                    guide</a>.
             </p>
         </div>
     </footer>
