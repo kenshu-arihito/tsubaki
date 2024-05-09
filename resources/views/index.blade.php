@@ -88,8 +88,8 @@
                         <label class="col-8">
                             <select name="" class="form-select">
                                 <option selected>カテゴリ</option>
-                                @foreach ($products as $product)
-                                    <option value="{{ $product->category->id }}">{{ $product->category->name }}</option>
+                                @foreach ($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
                                 @endforeach
                             </select>
                         </label>
@@ -126,7 +126,7 @@
                                                 href="https://www.amazon.co.jp/{{ $product->name }}/s?k={{ $product->name }}"><i
                                                     class="fa fa-amazon"></i> Amazon購入</a>
                                         </div>
-                                        <small class="text-muted">{{ $product->category->name }}</small>
+                                        <small class="text-muted text-white-50 badge bg-secondary">{{ $product->category->name }}</small>
                                     </div>
                                 </div>
                             </div>
