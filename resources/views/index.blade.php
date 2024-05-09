@@ -95,11 +95,14 @@
                         </label>
                         <span class="col-4 text-left border-bottom border-gray-200"><i class="fa fa-money"></i>
                             価格範囲</span>
-                        <label class="col-4"><input type="text" name="" class="form-control" placeholder="最安値(円)"></label>
-                        <label class="col-4"><input type="text" name="" class="form-control" placeholder="最高値(円)"></label>
+                        <label class="col-4"><input type="text" name="" class="form-control"
+                                placeholder="最安値(円)"></label>
+                        <label class="col-4"><input type="text" name="" class="form-control"
+                                placeholder="最高値(円)"></label>
                         <span class="col-4 text-left border-bottom border-gray-200"><i class="fa fa-tags"></i>
                             キーワード</span>
-                        <label class="col-8"><input type="text" name="" class="form-control" placeholder="キーワード"></label>
+                        <label class="col-8"><input type="text" name="" class="form-control"
+                                placeholder="キーワード"></label>
                         <a class="col-8 ml-auto btn btn-secondary" href="#">絞り込み検索</a>
                     </form>
                 </div>
@@ -126,12 +129,16 @@
                                                 href="https://www.amazon.co.jp/{{ $product->name }}/s?k={{ $product->name }}"><i
                                                     class="fa fa-amazon"></i> Amazon購入</a>
                                         </div>
-                                        <small class="text-muted text-white-50 badge bg-secondary">{{ $product->category->name }}</small>
+                                        <small
+                                            class="text-muted text-white-50 badge bg-secondary">{{ $product->category->name }}</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     @endforeach
+                </div>
+                <div class="col-12 bg-light pb-0 mt-4">
+                    {{ $products->links() }}
                 </div>
             </div>
         </div>
