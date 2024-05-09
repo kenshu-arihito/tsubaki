@@ -54,9 +54,9 @@
                     <div class="col-sm-4 offset-md-1 py-4">
                         <h4 class="text-white">詳細リンク</h4>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-white"><i class="fa fa-wpforms"></i> マイページ</a></li>
-                            <li><a href="#" class="text-white"><i class="fa fa-pie-chart"></i> 他の人のお菓子</a></li>
-                            <li><a href="#" class="text-white"><i class="fa fa-heart"></i> お気に入りの一覧</a></li>
+                            <li><a href="" class="text-white"><i class="fa fa-wpforms"></i> マイページ</a></li>
+                            <li><a href="" class="text-white"><i class="fa fa-pie-chart"></i> 他の人のお菓子</a></li>
+                            <li><a href="" class="text-white"><i class="fa fa-heart"></i> お気に入りの一覧</a></li>
                         </ul>
                     </div>
                 </div>

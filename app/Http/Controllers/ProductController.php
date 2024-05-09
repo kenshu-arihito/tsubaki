@@ -15,9 +15,8 @@ class ProductController extends Controller
             //     $q->orWhere('description', 'LIKE', '%チョコ%');
             // })->get();
 
-        $collection = Product::all();
         return view('index', [
-            'products' => $collection,
+            'products'   => Product::all(),
             'categories' => Category::all()
         ]);
     }
